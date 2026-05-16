@@ -1,0 +1,201 @@
+/* ===================================
+   MENU HAMBÚRGUER & NAVEGAÇÃO MOBILE
+   =================================== */
+
+/* Menu Toggle Button */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1002;
+    transition: all 0.3s ease;
+}
+
+.menu-toggle span {
+    width: 30px;
+    height: 3px;
+    background: var(--cor-primaria);
+    border-radius: 3px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Nav Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    color: var(--cor-texto);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 0.5rem 0;
+    display: block;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--cor-primaria);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after {
+    width: 100%;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--cor-primaria);
+}
+
+/* CTAs */
+.nav-cta-wrapper-mobile {
+    display: none;
+}
+
+.nav-cta-desktop {
+    display: inline-flex;
+}
+
+.nav-cta-mobile {
+    display: none;
+}
+
+/* ===================================
+   MOBILE RESPONSIVE
+   =================================== */
+@media (max-width: 968px) {
+    /* Mostra menu hambúrguer */
+    .menu-toggle {
+        display: flex;
+    }
+    
+    /* Esconde CTA desktop */
+    .nav-cta-desktop {
+        display: none !important;
+    }
+    
+    /* Menu Mobile Overlay */
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 350px;
+        height: 100vh;
+        background: linear-gradient(135deg, var(--cor-primaria) 0%, #18343D 100%);
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 100px 2rem 2rem;
+        gap: 0;
+        box-shadow: -5px 0 30px rgba(0, 0, 0, 0.3);
+        transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 1001;
+        overflow-y: auto;
+    }
+    
+    .nav-links.active {
+        right: 0;
+    }
+    
+    /* Links no menu mobile */
+    .nav-links li {
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .nav-link {
+        color: white;
+        font-size: 1.15rem;
+        padding: 1.25rem 0;
+        width: 100%;
+        font-weight: 500;
+    }
+    
+    .nav-link::after {
+        background: white;
+    }
+    
+    /* CTA no menu mobile */
+    .nav-cta-wrapper-mobile {
+        display: block;
+        width: 100%;
+        margin-top: 1.5rem;
+        border-bottom: none;
+    }
+    
+    .nav-cta-mobile {
+        display: block;
+        background: white;
+        color: var(--cor-primaria);
+        padding: 1rem 1.5rem;
+        border-radius: 12px;
+        text-align: center;
+        font-weight: 600;
+        text-decoration: none;
+        width: 100%;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    .nav-cta-mobile:hover,
+    .nav-cta-mobile:active {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    }
+    
+    /* Overlay escuro quando menu aberto */
+    body.menu-open::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        backdrop-filter: blur(2px);
+        animation: fadeIn 0.3s ease;
+    }
+    
+    body.menu-open {
+        overflow: hidden;
+    }
+    
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+}

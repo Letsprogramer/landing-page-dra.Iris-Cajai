@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="Dra. Iris Cajaí - Atendimento médico domiciliar em Rio Claro, Limeira, Piracicaba e região. Clínica Médica e Medicina Integrativa para crianças, adultos e idosos.">
+    
+    <!-- Mobile Optimizations -->
+    <meta name="theme-color" content="#1F6F86">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Dra. Iris Cajaí">
+    
+    <!-- Performance -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    
+    <title>Dra. Iris Cajaí | Atendimento Médico Domiciliar</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mobile-menu.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="logo">
+                <div class="logo-circle">
+                    <img src="images/Logo.png" alt="Logo Dra. Iris Cajaí" class="logo-icon">
+                </div>
+                <div class="logo-text">
+                    <div class="logo-name">Dra. Iris Cajaí</div>
+                    <div class="logo-subtitle">Clínica Médica & Medicina Integrativa</div>
+                </div>
+            </div>
+            
+            <!-- Menu Hambúrguer Mobile -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Menu de navegação">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <!-- Menu Links -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#sobre" class="nav-link">Sobre Mim</a></li>
+                <li><a href="#publicos" class="nav-link">Especialidades</a></li>
+                <li><a href="#diferenciais" class="nav-link">Diferenciais</a></li>
+                <li><a href="#calculadora" class="nav-link">Calcular Consulta</a></li>
+                <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+                <li class="nav-cta-wrapper-mobile">
+                    <a href="#agendamento" class="nav-cta-mobile">
+                        Agendar Consulta →
+                    </a>
+                </li>
+            </ul>
+            
+            <a href="#agendamento" class="nav-cta nav-cta-desktop">
+                <span>Agendar Consulta</span>
+                <span>→</span>
+            </a>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="inicio">
+        <div class="container-wide">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">CRM 110666 - SP</div>
+                    <h1>Cuidado Médico no Conforto da Sua Casa</h1>
+                    <p class="hero-highlight"> ATENDIMENTO ACESSÍVEL A TODOS</p>
+                    <p class="hero-description">
+                        Atendimento médico domiciliar humanizado com valores justos e acessíveis para todas as classes sociais. 
+                        Medicina integrativa de qualidade para crianças, adultos e idosos em Rio Claro e região.
+                    </p>
+                    <div class="hero-features">
+                        <div class="hero-feature">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 22V12H15V22" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Atendimento domiciliar exclusivo
+                        </div>
+                        <div class="hero-feature">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 17H11V15H13V17ZM13 13H11V7H13V13Z" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="12" cy="12" r="10" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                            </svg>
+                            Valores acessíveis a todas as classes
+                        </div>
+                        <div class="hero-feature">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.84 4.61C19.5 3.28 17.76 2.5 15.92 2.5C14.08 2.5 12.34 3.28 11 4.61L10 5.61L9 4.61C7.66 3.28 5.92 2.5 4.08 2.5C2.24 2.5 0.5 3.28 -0.84 4.61C-3.59 7.37 -3.59 11.88 -0.84 14.64L10 25.5L20.84 14.64C23.59 11.88 23.59 7.37 20.84 4.61Z" transform="translate(2 -1)" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Medicina integrativa e humanizada
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#agendamento" class="btn-primary">
+                            <span>Agendar Consulta</span>
+                            <span>→</span>
+                        </a>
+                        <a href="#sobre" class="btn-secondary">Conheça mais</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-image-wrapper">
+                        <img src="images/dra-iris-hero.jpg" alt="Dra. Iris Cajaí">
+                    </div>
+                    <div class="hero-badge-float badge-1">
+                        <div class="badge-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 22V12H15V22" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="badge-text">Atendimento<br>Domiciliar</div>
+                    </div>
+                    <div class="hero-badge-float badge-2">
+                        <div class="badge-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2Z" stroke="white" stroke-width="2"/>
+                                <path d="M9 12L11 14L15 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="badge-text">Valores<br>Acessíveis</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section class="sobre" id="sobre">
+        <div class="container">
+            <div class="sobre-content">
+                <div class="sobre-image">
+                    <img src="images/dra-iris-sobre.jpg" alt="Dra. Iris Cajaí" class="sobre-image-main">
+                    <div class="sobre-badge">
+                        <div class="sobre-badge-number">20+</div>
+                        <div class="sobre-badge-text">Anos de<br>Experiência</div>
+                    </div>
+                </div>
+                <div class="sobre-text">
+                    <span class="sobre-subtitle">Sobre a Doutora</span>
+                    <h2>Dra. Iris Cajaí</h2>
+                    <p>
+                        Médica dedicada à promoção da saúde integral, unindo os conhecimentos da medicina 
+                        tradicional com uma abordagem integrativa e humanizada. Acredito que o cuidado 
+                        verdadeiro acontece quando tratamos não apenas os sintomas, mas a pessoa como um todo.
+                    </p>
+                    <p>
+                        Minha missão é levar atendimento médico de qualidade até você, no conforto e segurança 
+                        do seu lar, respeitando as particularidades de cada fase da vida.
+                    </p>
+                    <div class="credenciais">
+                        <div class="credencial">
+                            <svg class="credencial-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                            </svg>
+                            <div class="credencial-text">
+                                <div class="credencial-titulo">Graduação em Medicina</div>
+                                <div class="credencial-local">Universidade de Vassouras (RJ)</div>
+                            </div>
+                        </div>
+                        <div class="credencial">
+                            <svg class="credencial-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                            <div class="credencial-text">
+                                <div class="credencial-titulo">Residência Médica</div>
+                                <div class="credencial-local">Hospital Santa Marcelina (SP)</div>
+                            </div>
+                        </div>
+                        <div class="credencial">
+                            <svg class="credencial-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                            </svg>
+                            <div class="credencial-text">
+                                <div class="credencial-titulo">Pós-Graduação</div>
+                                <div class="credencial-local">Medicina Integrativa</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Públicos Atendidos -->
+    <section class="publicos" id="publicos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Para Quem Atendemos</span>
+                <h2>Cuidado Integral em Todas as Fases da Vida</h2>
+                <p>Atendimento especializado e personalizado para cada momento da sua jornada</p>
+            </div>
+            <div class="publicos-grid">
+                <div class="publico-card">
+                    <img src="images/criancas.jpg" alt="Atendimento Infantil" class="publico-image">
+                    <div class="publico-content">
+                        <div class="publico-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="8" r="4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6 21V19C6 17.9391 6.42143 16.9217 7.17157 16.1716C7.92172 15.4214 8.93913 15 10 15H14C15.0609 15 16.0783 15.4214 16.8284 16.1716C17.5786 16.9217 18 17.9391 18 19V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="publico-titulo">Crianças</h3>
+                        <ul class="publico-lista">
+                            <li>Tratamento de transtornos comportamentais</li>
+                            <li>TDAH e TEA (Autismo)</li>
+                            <li>Fortalecimento da imunidade</li>
+                            <li>Alergias e asma</li>
+                            <li>Distúrbios do sono</li>
+                            <li>Cólicas do recém-nascido</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="publico-card">
+                    <img src="images/adultos.png" alt="Atendimento Adultos" class="publico-image">
+                    <div class="publico-content">
+                        <div class="publico-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="12" cy="7" r="4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="publico-titulo">Adultos</h3>
+                        <ul class="publico-lista">
+                            <li>Consultas de rotina e check-ups</li>
+                            <li>Prevenção e promoção da saúde</li>
+                            <li>Doenças crônicas</li>
+                            <li>Medicina integrativa</li>
+                            <li>Orientação nutricional</li>
+                            <li>Qualidade de vida</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="publico-card">
+                    <img src="images/idosos.jpg" alt="Atendimento Idosos" class="publico-image">
+                    <div class="publico-content">
+                        <div class="publico-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="7" r="4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.5 21C5.5 18.5 8 16 12 16C16 16 18.5 18.5 18.5 21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M18 14L20 16L23 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="publico-titulo">Idosos</h3>
+                        <ul class="publico-lista">
+                            <li>Revisão e ajuste de medicamentos</li>
+                            <li>Manejo de dores crônicas</li>
+                            <li>Prevenção de novas patologias</li>
+                            <li>Melhoria da mobilidade</li>
+                            <li>Cuidados com demência</li>
+                            <li>Cuidados paliativos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diferenciais -->
+    <section class="diferenciais" id="diferenciais">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Nossos Diferenciais</span>
+                <h2>Por Que Escolher o Atendimento Domiciliar?</h2>
+                <p>Combinamos valores acessiveis, humanização e medicina integrativa para oferecer o melhor cuidado</p>
+            </div>
+            <div class="diferenciais-grid">
+                <div class="diferencial-card">
+                    <div class="diferencial-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 22V12H15V22" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="diferencial-titulo">Atendimento Domiciliar Exclusivo</h3>
+                    <p class="diferencial-descricao">
+                        Consultas realizadas no conforto e segurança da sua casa, eliminando deslocamentos 
+                        e tempo de espera. Atendimento personalizado com toda a atenção que você merece. 
+                        Sem filas, sem estresse - apenas cuidado humanizado.
+                    </p>
+                    <span class="diferencial-destaque">Sem necessidade de sair de casa</span>
+                </div>
+                
+                <div class="diferencial-card">
+                    <div class="diferencial-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14 2V8H20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 13H8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 17H8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="diferencial-titulo">Assessoria Pericial e Documentação</h3>
+                    <p class="diferencial-descricao">
+                        Suporte completo com atestados periciais para aposentadoria por debilidades, 
+                        documentação especializada para crianças e pessoas com necessidades especiais, 
+                        e assessoria técnica compassiva em situações de óbito familiar.
+                    </p>
+                    <span class="diferencial-destaque">Apoio em momentos importantes</span>
+                </div>
+                
+                <div class="diferencial-card">
+                    <div class="diferencial-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 16.92V19.92C22 20.4696 21.5523 20.92 21.0027 20.92C9.95 20.42 1 11.47 1 1.92C1 1.37 1.44772 0.92 1.99731 0.92H4.99731C5.54691 0.92 5.99731 1.37 5.99731 1.92C5.99731 3.42 6.25731 4.85 6.73731 6.19C6.84731 6.49 6.74731 6.83 6.49731 7.04L4.72731 8.81C6.42731 12.35 9.47731 15.4 13.0173 17.1L14.7873 15.33C15.0073 15.09 15.3273 14.98 15.6373 15.1C16.9773 15.58 18.4073 15.84 19.9073 15.84C20.4573 15.84 20.9073 16.29 20.9073 16.84V19.84" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="diferencial-titulo">Suporte Contínuo 24h</h3>
+                    <p class="diferencial-descricao">
+                        <strong>Exclusivo para pacientes já atendidos:</strong> Acesso direto à Dra. Iris 24 horas 
+                        para dúvidas médicas, reajuste de medicação e orientações. Seu médico sempre acessível 
+                        quando você precisar de suporte continuado ao tratamento.
+                    </p>
+                    <div class="diferencial-alerta">
+                        ⚠️ <strong>Importante:</strong> Período noturno destinado exclusivamente a emergências extremas
+                    </div>
+                    <span class="diferencial-destaque">Apenas para pacientes em acompanhamento</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Funciona -->
+    <section class="como-funciona" id="como-funciona">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Processo Simples</span>
+                <h2>Como Funciona o Atendimento</h2>
+                <p>Em poucos passos, você agenda sua consulta e recebe cuidado médico de qualidade em casa</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 class="timeline-titulo">Entre em Contato</h3>
+                        <p class="timeline-descricao">
+                            Entre em contato via WhatsApp ou preencha o formulário. 
+                            Informe sua cidade e o motivo da consulta.
+                        </p>
+                    </div>
+                    <div class="timeline-number">1</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 class="timeline-titulo">Receba o Orçamento</h3>
+                        <p class="timeline-descricao">
+                            Calculamos o valor da consulta baseado na distância (R$ 2/km a partir de Rio Claro). 
+                            Valores transparentes e justos.
+                        </p>
+                    </div>
+                    <div class="timeline-number">2</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 class="timeline-titulo">Agende sua Consulta</h3>
+                        <p class="timeline-descricao">
+                            Escolha o melhor horário e data. Confirmamos o agendamento 
+                            e enviamos todas as orientações.
+                        </p>
+                    </div>
+                    <div class="timeline-number">3</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 class="timeline-titulo">Atendimento em Casa</h3>
+                        <p class="timeline-descricao">
+                            A Dra. Iris vai até você no horário agendado. Atendimento completo, 
+                            humanizado e sem pressa no conforto do seu lar.
+                        </p>
+                    </div>
+                    <div class="timeline-number">4</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculadora -->
+    <section class="calculadora" id="calculadora">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Calculadora de Custo</span>
+                <h2>Calcule o Valor da sua Consulta</h2>
+                <p>Transparência total: veja quanto custará o atendimento na sua região</p>
+            </div>
+            <div class="calculadora-wrapper">
+                <form class="calculadora-form" id="calcForm">
+                    <div class="form-group">
+                        <label class="form-label" for="cidade">Selecione sua cidade:</label>
+                        <select class="form-select" id="cidade" required>
+                            <option value="">Escolha sua cidade...</option>
+                            <option value="0">Rio Claro (Consulta domiciliar)</option>
+                            <option value="15">Francisco Morato (~15 km)</option>
+                            <option value="20">Franco da Rocha (~20 km)</option>
+                            <option value="25">Santa Gertrudes (~25 km)</option>
+                            <option value="35">Leme (~35 km)</option>
+                            <option value="30">Limeira (~30 km)</option>
+                            <option value="40">Piracicaba (~40 km)</option>
+                            <option value="50">São Pedro (~50 km)</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-primary">
+                        <span>Calcular Valor</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="4" y="2" width="16" height="20" rx="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <line x1="8" y1="6" x2="16" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <line x1="8" y1="10" x2="16" y2="10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <line x1="8" y1="14" x2="16" y2="14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <line x1="8" y1="18" x2="12" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </form>
+                <div class="calculadora-resultado" id="resultado">
+                    <h3>Valor Total Estimado</h3>
+                    <div class="resultado-valor" id="valorTotal">R$ 0,00</div>
+                    <p class="resultado-detalhes" id="detalhes"></p>
+                    <div class="resultado-info">
+                        <strong>Regiões atendidas:</strong> Rio Claro e região (raio de 50km)<br>
+                        <strong>Formas de pagamento:</strong> Consultar ao agendar<br>
+                        <strong>Duração média:</strong> 45-60 minutos
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="depoimentos" id="depoimentos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Depoimentos</span>
+                <h2>O Que Nossos Pacientes Dizem</h2>
+                <p>Histórias reais de quem confia no nosso cuidado</p>
+            </div>
+            <div class="depoimentos-grid">
+                <div class="depoimento-card">
+                    <div class="depoimento-aspas">"</div>
+                    <p class="depoimento-texto">
+                        O atendimento domiciliar foi fundamental para mim. A Dra. Iris é extremamente 
+                        atenciosa e competente. Não precisamos mais enfrentar filas e deslocamentos.
+                    </p>
+                    <div class="estrelas">★★★★★</div>
+                    <div class="depoimento-autor">
+                        <div class="depoimento-avatar">M</div>
+                        <div class="depoimento-info">
+                            <h4>Leticia F.</h4>
+                            <p>Rio Claro - SP</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="depoimento-card">
+                    <div class="depoimento-aspas">"</div>
+                    <p class="depoimento-texto">
+                        Meu filho tem autismo e as consultas eram sempre muito estressantes. Com o atendimento em casa, 
+                        ele fica muito mais confortável. A doutora é maravilhosa e entende perfeitamente as necessidades dele.
+                    </p>
+                    <div class="estrelas">★★★★★</div>
+                    <div class="depoimento-autor">
+                        <div class="depoimento-avatar">C</div>
+                        <div class="depoimento-info">
+                            <h4>Carla P.</h4>
+                            <p>Limeira - SP</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="depoimento-card">
+                    <div class="depoimento-aspas">"</div>
+                    <p class="depoimento-texto">
+                        Profissional excepcional! O diferencial do suporte 24h via telemedicina me dá muita segurança. 
+                        Já precisei tirar dúvidas algumas vezes e sempre fui muito bem atendido.
+                    </p>
+                    <div class="estrelas">★★★★★</div>
+                    <div class="depoimento-autor">
+                        <div class="depoimento-avatar">J</div>
+                        <div class="depoimento-info">
+                            <h4>João R.</h4>
+                            <p>Piracicaba - SP</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agendamento -->
+    <section class="agendamento" id="agendamento">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Agende sua Consulta</span>
+                <h2>Vamos Cuidar de Você</h2>
+                <p>Preencha o formulário e entraremos em contato rapidamente</p>
+            </div>
+            <div class="agendamento-wrapper">
+                <form class="agendamento-form" id="agendamentoForm">
+                    <div class="form-group">
+                        <label class="form-label" for="nome">Nome Completo *</label>
+                        <input type="text" class="form-input" id="nome" required placeholder="Digite seu nome completo">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="cidadeForm">Cidade *</label>
+                        <select class="form-select" id="cidadeForm" required>
+                            <option value="">Selecione sua cidade...</option>
+                            <option value="Rio Claro">Rio Claro</option>
+                            <option value="Francisco Morato">Francisco Morato</option>
+                            <option value="Franco da Rocha">Franco da Rocha</option>
+                            <option value="Santa Gertrudes">Santa Gertrudes</option>
+                            <option value="Leme">Leme</option>
+                            <option value="Limeira">Limeira</option>
+                            <option value="Piracicaba">Piracicaba</option>
+                            <option value="São Pedro">São Pedro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="endereco">CEP ou Endereço *</label>
+                        <input type="text" class="form-input" id="endereco" required placeholder="Digite seu CEP ou endereço completo">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="problema">Descreva o motivo da consulta *</label>
+                        <textarea class="form-input" id="problema" required placeholder="Conte-nos brevemente sobre sua necessidade ou o que está sentindo..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">
+                        <span>Enviar Mensagem via WhatsApp</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                        </svg>
+                    </button>
+                    <div class="agendamento-info">
+                        <strong>Resposta:</strong> Até 2 horas no horário comercial<br>
+                        <strong>WhatsApp:</strong> (19) 99956-8568
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>Dra. Iris Cajaí</h3>
+                    <p>
+                        Médica especialista em Clínica Médica e Medicina Integrativa, 
+                        dedicada a levar atendimento humanizado e de qualidade até você.
+                    </p>
+                    <p class="footer-crm">CRM 110666 - SP</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#publicos">Especialidades</a></li>
+                        <li><a href="#diferenciais">Diferenciais</a></li>
+                        <li><a href="#calculadora">Calcular Custo</a></li>
+                        <li><a href="#agendamento">Agendar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contato">
+                    <h4>Contato</h4>
+                    <div class="footer-contato-item">
+                        <svg class="footer-contato-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="5" y="2" width="14" height="20" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 18H12.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span>(19) 99956-8568</span>
+                    </div>
+                    <div class="footer-contato-item">
+                        <svg class="footer-contato-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        <span>Rio Claro - SP e Região</span>
+                    </div>
+                    <div class="footer-contato-item">
+                        <svg class="footer-contato-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span>Seg-Sex: 8h-18h</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dra. Iris Cajaí. Todos os direitos reservados. | CRM 110666 - SP</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5519999568568?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20domiciliar." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contato WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
